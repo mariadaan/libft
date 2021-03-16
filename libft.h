@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:02:54 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/05 16:23:12 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/16 14:53:56 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,11 @@ char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void			ft_putchar_fd(char c, int fd);
+void			ft_putchar(char c);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
+void			ft_putbasenbr(unsigned int num, int base);
 
 /*
 **	Bonus part: list functions
