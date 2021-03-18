@@ -6,11 +6,11 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:02:35 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/05 18:23:52 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:17:23 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		c -= 32;

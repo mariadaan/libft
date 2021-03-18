@@ -6,11 +6,11 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 12:57:49 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/02 12:57:50 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:17:13 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

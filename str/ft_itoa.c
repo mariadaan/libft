@@ -6,15 +6,15 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 12:58:03 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/01/16 14:34:09 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:30:13 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t		ft_get_len(int n)
+static size_t	ft_get_len(int n)
 {
-	size_t len;
+	size_t	len;
 
 	len = 0;
 	if (n == 0)
@@ -32,7 +32,7 @@ static size_t		ft_get_len(int n)
 	return (len);
 }
 
-char				*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	int		num;
 	char	*str;

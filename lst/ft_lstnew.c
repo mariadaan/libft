@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/31 13:36:03 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/03 16:07:53 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:23:43 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 **	variable ’next’ is initialized to NULL
 */
 
-t_list		*ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-	t_list *lst;
+	t_list	*lst;
 
 	lst = malloc(sizeof(t_list));
 	if (!lst)

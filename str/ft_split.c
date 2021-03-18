@@ -6,16 +6,16 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:00:08 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/24 13:40:26 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:30:56 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int			ft_count_words(char const *str, char c)
+static int	ft_count_words(char const *str, char c)
 {
-	int		word_count;
-	int		i;
+	int	word_count;
+	int	i;
 
 	word_count = 0;
 	i = 0;
@@ -28,7 +28,7 @@ static int			ft_count_words(char const *str, char c)
 	return (word_count);
 }
 
-static char			**free_array(char **array, unsigned int index)
+static char	**free_array(char **array, unsigned int index)
 {
 	while (index > 0)
 	{
@@ -39,7 +39,7 @@ static char			**free_array(char **array, unsigned int index)
 	return (NULL);
 }
 
-static char			**ft_make_array(char const *s, char c)
+static char	**ft_make_array(char const *s, char c)
 {
 	char	**array;
 	int		word_count;
@@ -51,7 +51,7 @@ static char			**ft_make_array(char const *s, char c)
 	return (array);
 }
 
-static char			**ft_make_word(char const *s, char c, char **array)
+static char	**ft_make_word(char const *s, char c, char **array)
 {
 	int		i;
 	int		word_len;
@@ -78,7 +78,7 @@ static char			**ft_make_word(char const *s, char c, char **array)
 	return (array);
 }
 
-char				**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**array;
 

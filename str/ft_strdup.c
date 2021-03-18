@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/01 22:29:55 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/05 15:31:26 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:31:59 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strdup(const char *s1)
 	char	*s2;
 
 	len = ft_strlen(s1) + 1;
-	s2 = (char*)malloc(len * sizeof(char));
+	s2 = (char *)malloc(len * sizeof(char));
 	if (!s2)
 		return (NULL);
 	ft_strlcpy(s2, s1, len);

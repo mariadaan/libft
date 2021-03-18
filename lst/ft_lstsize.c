@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/31 15:59:19 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/03 16:09:52 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:23:52 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 **	Counts the number of elements in a list.
 */
 
-int		ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-	int		num;
+	int	num;
 
 	if (!lst)
 		return (0);

@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 12:57:20 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/05 13:10:54 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:24:12 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *ptr;
+	void	*ptr;
 
 	ptr = (void *)malloc(count * size);
 	if (!ptr)

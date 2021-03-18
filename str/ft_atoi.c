@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/27 19:45:45 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/05 13:09:40 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:29:53 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 **	int value
 */
 
-static int		ft_isspace(int c)
+static int	ft_isspace(int c)
 {
 	if ((c >= 9 && c <= 13) || c == 32)
 		return (1);
@@ -28,7 +28,7 @@ static int		ft_isspace(int c)
 		return (0);
 }
 
-int				ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	unsigned long int	res;
 	int					i;

@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/31 16:17:28 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/03 16:09:10 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:23:25 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 **	Adds the element ’new’ at the end of the list.
 */
 
-void		ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *last;
+	t_list	*last;
 
 	if (!*lst)
 		*lst = new;

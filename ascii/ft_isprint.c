@@ -6,11 +6,11 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 12:57:56 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/02 12:57:57 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:17:17 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

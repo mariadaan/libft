@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:00:55 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/03 15:35:22 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:31:50 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 **	of dst plus the length of src.
 */
 
-size_t		ft_strlcat(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	dest_len;

@@ -6,11 +6,11 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 12:57:42 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/02 12:57:43 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:17:10 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c < 128)
 		return (1);

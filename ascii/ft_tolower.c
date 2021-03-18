@@ -6,11 +6,11 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:02:29 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/02 13:02:29 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:17:20 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c += 32;

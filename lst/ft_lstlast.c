@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/31 16:14:06 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/03 16:10:21 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:23:36 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **	Returns the last element of the list.
 */
 
-t_list		*ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
 		return (0);

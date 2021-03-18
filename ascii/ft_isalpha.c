@@ -6,11 +6,11 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 12:57:34 by mdaan         #+#    #+#                 */
-/*   Updated: 2020/11/02 12:57:35 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:17:07 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if (c < 'A' || c > 'z')
 		return (0);
