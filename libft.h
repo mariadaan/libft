@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:02:54 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/03/18 19:22:48 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/19 13:04:36 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,9 @@ void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 void			ft_putbasenbr(unsigned int num, int base);
+void			ft_put2darray(char **array, int height);
+char			*ft_move_ptr(const char *s, int c);
+int				ft_count_rows(char **array);
 
 /*
 **	Bonus part: list functions

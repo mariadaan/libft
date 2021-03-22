@@ -6,34 +6,43 @@
 #    By: mdaan <mdaan@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/10/31 11:56:32 by mdaan         #+#    #+#                  #
-#    Updated: 2021/03/16 14:39:46 by mdaan         ########   odam.nl          #
+#    Updated: 2021/03/22 10:42:26 by mdaan         ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libft.a
-SRCS	=	$(wildcard ./ascii/*.c)				\
-			$(wildcard ./mem/*.c)				\
-			$(wildcard ./put/*.c)				\
-			$(wildcard ./str/*.c)				\
-			$(wildcard ./lst/*.c)
+SRCS	=	$(wildcard ascii/*.c)				\
+			$(wildcard mem/*.c)				\
+			$(wildcard put/*.c)				\
+			$(wildcard str/*.c)				\
+			$(wildcard lst/*.c)
 
-OBJS	=	$(SRCS:.c=.o)
-OBJS_B	=	$(SRCS_B:.c=.o)
+SRCS_FILES = $(shell find *  -type f -name '*.c' -exec basename {} \;)
+
 LIBC	=	ar -rcs
 RM		=	rm -f
 CC		=	gcc
 FLAGS	=	-Wall -Werror -Wextra
 
-all:		$(NAME)
+OBJSDIR	=	objs/
+OBJS	=	$(SRCS_FILES:%.c=$(OBJSDIR)%.o)
+
+all:		$(OBJSDIR) $(NAME)
+
+$(OBJSDIR):
+			echo $(SRCS)
+			mkdir $@
+			echo $(OBJS)
 
 $(NAME):	$(OBJS)
 			${LIBC} $(NAME) $(OBJS)
 
-%.o:		%.c libft.h
+$(OBJS):		$(SRCS) libft.h
 			$(CC) -c $(FLAGS) $< -o $@
 
 clean:
-			${RM} $(OBJS) $(OBJS_B)
+			${RM} $(OBJS)
+			${RM} -d $(OBJSDIR)
 
 fclean:		clean
 			${RM} $(NAME)
