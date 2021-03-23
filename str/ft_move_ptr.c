@@ -5,7 +5,7 @@ char	*ft_move_ptr(const char *s, int c)
 	char	*ptr;
 
 	ptr = (char *)s;
-	while (*ptr)
+	while (s && *ptr)
 	{
 		if (*ptr == c)
 			return (ptr);

@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:02:54 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/03/19 13:04:36 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/22 11:13:15 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 128
+# endif
 
 typedef struct s_list
 {
@@ -35,9 +39,12 @@ void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t			ft_strlen(const char *s);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
+void			ft_strcpy(char *dst, const char *src);
 size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
+int				ft_modstr(char *s, char c);
+int				ft_strlend(const char *s, char end);
 char			*ft_strnstr(const char *haystack, const char *needle,
 					size_t len);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -88,5 +95,11 @@ void			ft_lstclear(t_list **lst, void (*del)(void *));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
+
+/*
+**	Read functions
+*/
+
+int				read_till_end(int fd, char **line);
 
 #endif
