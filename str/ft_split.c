@@ -6,11 +6,11 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:00:08 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/03/18 19:30:56 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/23 15:08:13 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static int	ft_count_words(char const *str, char c)
 {
@@ -28,17 +28,6 @@ static int	ft_count_words(char const *str, char c)
 	return (word_count);
 }
 
-static char	**free_array(char **array, unsigned int index)
-{
-	while (index > 0)
-	{
-		free(array[index - 1]);
-		index--;
-	}
-	free(array);
-	return (NULL);
-}
-
 static char	**ft_make_array(char const *s, char c)
 {
 	char	**array;
@@ -47,7 +36,7 @@ static char	**ft_make_array(char const *s, char c)
 	word_count = ft_count_words(s, c);
 	array = (char **)ft_calloc((word_count + 1), sizeof(char *));
 	if (!array)
-		return (free_array(array, 0));
+		return (free_2darray(array, 0));
 	return (array);
 }
 
@@ -69,7 +58,7 @@ static char	**ft_make_word(char const *s, char c, char **array)
 				word_len++;
 			word = ft_substr(s, i, word_len);
 			if (!word)
-				return (free_array(array, word_index));
+				return (free_2darray(array, word_index));
 			array[word_index] = word;
 			word_index++;
 		}

@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:02:54 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/03/22 11:13:15 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/23 15:12:42 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ void			ft_strcpy(char *dst, const char *src);
 size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
+int				ft_inset(char *s1, char c);
+int				ft_setinset(char *s1, char *s2);
 int				ft_modstr(char *s, char c);
 int				ft_strlend(const char *s, char end);
 char			*ft_strnstr(const char *haystack, const char *needle,
@@ -68,7 +70,7 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
-char			**free2d_array(char **array, unsigned int index);
+char			**free_2darray(char **array, unsigned int index);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void			ft_putchar_fd(char c, int fd);

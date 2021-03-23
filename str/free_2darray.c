@@ -1,6 +1,6 @@
 #include "libft.h"
 
-char	**free2d_array(char **array, unsigned int index)
+char	**free_2darray(char **array, unsigned int index)
 {
 	while (index > 0)
 	{
