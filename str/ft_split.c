@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:00:08 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/03/23 15:08:13 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/05/18 18:30:01 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static char	**ft_make_array(char const *s, char c)
 	word_count = ft_count_words(s, c);
 	array = (char **)ft_calloc((word_count + 1), sizeof(char *));
 	if (!array)
-		return (free_2darray(array, 0));
+		return (free_2darray(array));
 	return (array);
 }
 
@@ -58,7 +58,7 @@ static char	**ft_make_word(char const *s, char c, char **array)
 				word_len++;
 			word = ft_substr(s, i, word_len);
 			if (!word)
-				return (free_2darray(array, word_index));
+				return (free_2darray(array));
 			array[word_index] = word;
 			word_index++;
 		}

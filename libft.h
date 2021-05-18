@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:02:54 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/04/25 12:01:43 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/05/18 19:21:36 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,8 @@ int				ft_tolower(int c);
 
 void			*ft_calloc(size_t count, size_t size);
 char			*ft_strdup(const char *s1);
+int				get_findex(char *str, char c);
+int				get_lindex(char *str, char c);
 
 /*
 **	Part 2: Additional functions
@@ -71,7 +73,7 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
-char			**free_2darray(char **array, unsigned int index);
+char			**free_2darray(char **array);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void			ft_putchar_fd(char c, int fd);
