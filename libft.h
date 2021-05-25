@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 13:02:54 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/05/18 19:21:36 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/05/25 12:02:52 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,5 +106,16 @@ t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 */
 
 int				read_till_end(int fd, char **line);
+
+/*
+**	Debug functions
+*/
+
+int				printnum(char *name, int num);
+int				printfloat(char *name, float num);
+int				printstr(char *name, char *str);
+int				printchar(char *name, char c);
+int				printco(char *name, int x, int y);
+int				printflco(char *name, double x, double y);
 
 #endif
